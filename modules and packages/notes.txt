@@ -1,0 +1,22 @@
+Modules and Packages — key concepts
+Module = any single .py file. You can import it and use what's inside.
+Package = a folder of .py files with an __init__.py inside. Lets you organise related modules together.
+
+__init__.py has two jobs:
+
+tells Python "this folder is a package, not just a folder"
+controls what the outside world can see. Whatever you import inside __init__.py becomes the public face of your package. Internal structure stays hidden.
+
+Three import styles:
+pythonimport weather.temperature             # grab the whole module
+from weather import get_forecast       # grab one specific thing
+from weather.exceptions import InvalidCityError  # grab from deep inside
+__name__ and the guard:
+
+every file has a __name__ variable
+if you run it directly from terminal → __name__ is "__main__"
+if another file imports it → __name__ is the module's actual name like "weather.temperature"
+the guard if __name__ == "__main__": lets you write test code inside a file that only runs when you target that file directly — not when it gets imported
+
+Why the guard matters:
+without it, every import would accidentally trigger your test code. The guard keeps test code isolated to when you actually want it.

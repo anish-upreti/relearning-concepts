@@ -1,0 +1,7 @@
+# using python 3.11
+
+# Week 5 - Data Analysis
+pandas>=2.0.0
+numpy>=1.26.0
+jupyter
+ipykernel

@@ -1,3 +1,4 @@
 myenv
-requirements.txt
+.venv
 some_concepts/
+__pycache__

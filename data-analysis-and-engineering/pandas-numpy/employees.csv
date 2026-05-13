@@ -1,0 +1,6 @@
+name,age,department,salary,years_exp,salary_per_exp,is_senior,name_lower
+Alice,25,Eng,90000,2,45000.0,False,alice
+Bob,30,Marketing,72000,5,14400.0,True,bob
+Charlie,35,Eng,105000,10,10500.0,True,charlie
+Diana,28,HR,68000,3,22666.666666666668,False,diana
+Eve,22,Eng,88000,1,88000.0,False,eve

@@ -17,3 +17,13 @@ scikit-learn>=1.3.0
 
 # Embeddings & Similarity Search
 sentence-transformers>=2.2.0
+
+# FastAPI
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0  # ASGI server — [standard] includes websocket support
+pydantic>=2.0.0             # data validation (included with FastAPI, explicit here)
+pydantic-settings>=2.0.0   # managing env vars and config (DATABASE_URL, SECRET_KEY etc.)
+python-multipart>=0.0.9    # required for file uploads and form data in FastAPI
+httpx>=0.27.0              # for testing FastAPI endpoints (used by TestClient)
+python-jose[cryptography]>=3.3.0  # JWT token creation and verification
+passlib[bcrypt]>=1.7.4     # password hashing

@@ -27,3 +27,7 @@ python-multipart>=0.0.9    # required for file uploads and form data in FastAPI
 httpx>=0.27.0              # for testing FastAPI endpoints (used by TestClient)
 python-jose[cryptography]>=3.3.0  # JWT token creation and verification
 passlib[bcrypt]>=1.7.4     # password hashing
+
+# Testing & CI/CD
+pytest>=8.0.0              # test runner
+pytest-cov>=5.0.0          # coverage reporting (pytest --cov=app)

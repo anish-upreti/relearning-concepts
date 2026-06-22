@@ -2,3 +2,4 @@ myenv
 .venv
 some_concepts/
 __pycache__
+.pytest_cache

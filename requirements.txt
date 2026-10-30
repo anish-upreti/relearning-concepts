@@ -20,7 +20,7 @@ sentence-transformers>=2.2.0
 chromadb>=1.0.0            # local vector database for RAG
 
 # LLM API & config
-groq>=1.0.0                # Groq client, used in the from-scratch RAG pipeline
+groq<1                     # Groq client; langchain-groq requires groq<1, so don't use groq>=1
 python-dotenv>=1.0.0       # loads GROQ_API_KEY from .env
 
 # LangChain
